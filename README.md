@@ -190,21 +190,21 @@ This way, the robot gets access to the ERP application and can start entering th
 
 # The advantages of Robocorp, work data management, and work items
 
-Interact with multiple systems and data sources - web applications, desktop applications, email, images, and PDF documents.
+- Interact with multiple systems and data sources - web applications, desktop applications, email, images, PDF documents, and much more.
 
-Find and read data from images and PDF documents.
+- Find and read data from images and PDF documents.
 
-Split processes into separate, clear tasks.
+- Split processes into separate, clear tasks.
 
-Run in Control Room containers to avoid self-hosted infra pain.
+- Run in Control Room containers to avoid self-hosted infra pain.
 
-Take advantage of multiple execution environments by also running on a Windows environment within the same process.
+- Take advantage of multiple execution environments by also running on a Windows environment within the same process. Or macOS. Or Linux!
 
-Use work items to enable parallel execution of work for faster process completion.
+- Use work items to enable parallel execution of work for faster process completion.
 
-Monitor the status of work flowing through the process.
+- Monitor the status of work flowing through the process.
 
-View, manually fix, and re-run the failed items.
+- View, manually fix, and re-run the failed items.
 
 # Learn more
 

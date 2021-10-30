@@ -1,5 +1,7 @@
 # Work data management and granny's spaghetti
 
+![](main-image.png)
+
 > "Her hands are sweaty, morale weak, mouse feels heavy<br />
 > There's tomato sauce on her sweater, granny's spaghetti<br />
 > She's tired, but on her lap, she has her teddy"
@@ -146,7 +148,7 @@ The first and the second task can be run in a Control Room container. The advant
 
 The third task requires interacting with a Windows-based desktop application. It can be run in a Windows environment using Robocorp Workforce Agent.
 
-## Addressing performance and error handling concerns with work items and concurrent execution
+## Enabling high performance and error handling with work items and concurrent execution
 
 The second step, collecting all the required data for each ticker, involves taking thousands of screenshots, downloading thousands of very large PDF documents, and finding and scraping data out of the images and documents.
 
@@ -161,6 +163,8 @@ To enable concurrent processing, we should split our work into small chunks, wor
 We can tell our robot to process multiple work items at the same time using the concurrency support in Control Room.
 
 In addition to enabling concurrent processing, work items have other advantages, too.
+
+We can monitor the status of work flowing through the process in real-time.
 
 If something goes wrong when processing a single work item, that item can be marked as failed. The processing can then continue with the rest of the work items.
 
@@ -184,7 +188,7 @@ The Robocorp Workforce Agent handles downloading, installing, and running the ro
 
 This way, the robot gets access to the ERP application and can start entering the data, exporting and saving the entered data as PDF documents, and sending out the verification emails with the PDF documents attached.
 
-# The advantages of work data management and work items
+# The advantages of Robocorp, work data management, and work items
 
 Interact with multiple systems and data sources - web applications, desktop applications, email, images, and PDF documents.
 

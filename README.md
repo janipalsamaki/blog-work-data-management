@@ -2,6 +2,8 @@
 
 ![](main-image.png)
 
+_Teddy & spaghetti photos from Unsplash.com_
+
 > "Her hands are sweaty, morale weak, mouse feels heavy<br />
 > There's tomato sauce on her sweater, granny's spaghetti<br />
 > She's tired, but on her lap, she has her teddy"

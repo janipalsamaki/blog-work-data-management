@@ -22,7 +22,7 @@ Once upon a time, there was an office worker. Her job was great and fulfilling m
 
 "And that's it. Good luck!" her boss smiled and hurried out of the door.
 
-Luckily, she managed to find someone in the office who explained the process in a bit more detail.
+Luckily, she managed to find someone in the office who explained the process in _a bit_ more detail.
 
 "Ok. First, you navigate to Nasdaq's website and download this Excel spreadsheet." the helpful person explained.
 
@@ -78,7 +78,7 @@ She felt her heart skip a beat. No. Not PDF documents. Anything else but those.
 
 "Ok. And how many pages are in one document?"
 
-"No more than 200."
+"No more than two hundred."
 
 Cold sweat drenched her back. After picking herself up from the floor, she managed to continue:
 
@@ -106,11 +106,11 @@ Breathing heavily, she asked:
 
 "Yes, give or take. Good luck!" the helpful person exclaimed happily and disappeared to her cubicle.
 
-> Back at her desk, wiping her sweaty palms, tiredly reaching for her mouse that felt exceptionally heavy that morning, glancing at the delicious spaghetti sauce stain on her sweater, she placed her teddy bear on her lap for mental support, and navigated to Nasdaq's website.
+> Back at her desk, wiping her sweaty palms, tiredly reaching for her mouse that felt exceptionally heavy that morning, glancing at the delicious spaghetti sauce stain on her sweater, she placed her teddy bear on her lap for mental support and navigated to Nasdaq's website.
 
 ## Process summary
 
-So, to summarize the process:
+Whew! To summarize the process:
 
 Fetch thousands of stock tickers from the Nasdaq website as an Excel spreadsheet. (This can be done using browser automation.)
 
@@ -128,13 +128,13 @@ Export each entry from the ERP as a PDF document. (This can be done using Window
 
 Email the PDF documents to the recipients. (This can be done using email automation.)
 
-That's a lot of work for any person to handle!
+That's **a lot of work** for any person to handle! Not even a teddy bear is probably enough.
 
 ## How to Robocorp
 
-Let's see how the same process could be automated with Robocorp.
+Maybe we can help the poor office worker in distress? Let's see how the same process could be automated with Robocorp.
 
-We can split the process into three distinct tasks.
+We could split the process into three distinct tasks.
 
 The first task fetches the tickers from Nasdaq.
 
@@ -144,33 +144,33 @@ The third and final task enters the data into the ERP system and sends out the v
 
 ## Multiple execution environments
 
-The first and the second task can be run in a Control Room container. The advantage of that is you do not need to host the run environments yourself. It just works!
+The first and the second task can be run in a Control Room container. The advantage of that is you do not need to host the run environments yourself. It just works! Let your IT department take the afternoon off and enjoy some carbonara instead.
 
-The third task requires interacting with a Windows-based desktop application. It can be run in a Windows environment using Robocorp Workforce Agent.
+The third task requires interacting with a Windows-based desktop application. It can be run in a Windows environment using Robocorp Workforce Agent. Robocorp also supports macOS and Linux!
 
-## Enabling high performance and error handling with work items and concurrent execution
+## Enabling high performance and error handling with work items and parallel execution
 
-The second step, collecting all the required data for each ticker, involves taking thousands of screenshots, downloading thousands of very large PDF documents, and finding and scraping data out of the images and documents.
+The second step, collecting all the required data for each ticker, involves taking thousands of screenshots, downloading thousands of humongous PDF documents, and finding and scraping data out of the images and documents.
 
-Even when the robot goes as fast as it can, it is restricted by the speed of the systems where it gathers the data from.
+Even when the robot goes as fast as it can, it is restricted by the speed of the systems where it gathers the data from. Sure, it can work more quickly than a human (or match the speed of a teddy bear - those things are fast!) but is there a way to improve the speed even further?
 
 Luckily, there's a built-in solution in Control Room to address that challenge.
 
-To speed up the task, we can configure Control Room to use concurrent processing. Instead of collecting the company data one ticker at a time, we can simultaneously collect data for many companies.
+To speed up the task execution, we can configure Control Room to use **parallel processing**. Instead of collecting the company data one ticker at a time, we can simultaneously collect data for many companies. It's like an army of teddy bears!
 
-To enable concurrent processing, we should split our work into small chunks, work items, so that each of those items can be processed separately. In this case, one ticker becomes one work item.
+To enable parallel processing, we should split our work into small chunks, **work items**, so that each of those items can be processed separately. In this case, one ticker becomes one work item.
 
-We can tell our robot to process multiple work items at the same time using the concurrency support in Control Room.
+We can tell our robot to process multiple work items at the same time using the parallel execution support in Control Room. This results in faster process execution. Neat!
 
-In addition to enabling concurrent processing, work items have other advantages, too.
+In addition to enabling parallel processing, work items have other advantages, too.
 
-We can monitor the status of work flowing through the process in real-time.
+We can monitor the status of work flowing through the process in real-time. Piece by piece, work gets completed. Captivating!
 
-If something goes wrong when processing a single work item, that item can be marked as failed. The processing can then continue with the rest of the work items.
+If something goes wrong when processing a single work item (for example, when some data is invalid), that item can be marked as failed. The processing can then continue with the rest of the work items - no need to halt the whole caravan due to one camel running out of humps.
 
-The failed work items can be manually fixed and re-run later without re-running everything. This way, you can avoid processing already successfully processed items again.
+The failed work items can be manually handled and re-run later without re-running _everything_. This way, you can avoid processing already successfully processed items again.
 
-So, instead of running all the data gathering for all the thousands of tickers again, we can fix the data in the failed work items and re-run only those items.
+So, instead of running all the data gathering for the thousands of tickers again, we can fix the data in the failed work items and re-run only those items.
 
 Pretty sweet!
 
@@ -180,7 +180,7 @@ Back to the third task.
 
 This task involves entering the data into the Windows-based ERP system and sending out the verification emails.
 
-Conveniently, Robocorp supports multiple execution environments. In addition to Control Room containers, you can run tasks in other environments, too.
+Conveniently, as already mentioned, Robocorp supports **multiple execution environments**. In addition to Control Room containers, you can run tasks in other environments, too.
 
 In this case, the robot needs to interact with a desktop application. This scenario is supported by installing the Robocorp Workforce Agent on the Windows machine.
 
@@ -190,11 +190,13 @@ This way, the robot gets access to the ERP application and can start entering th
 
 # The advantages of Robocorp, work data management, and work items
 
+To recap, here are some powerful things you can do with Robocorp:
+
 - Interact with multiple systems and data sources - web applications, desktop applications, email, images, PDF documents, and much more.
 
 - Find and read data from images and PDF documents.
 
-- Split processes into separate, clear tasks.
+- Split processes into separate, clear, human-readable tasks.
 
 - Run in Control Room containers to avoid self-hosted infra pain.
 
@@ -204,7 +206,7 @@ This way, the robot gets access to the ERP application and can start entering th
 
 - Monitor the status of work flowing through the process.
 
-- View, manually fix, and re-run the failed items.
+- View, manually fix and re-run the failed items.
 
 # Learn more
 

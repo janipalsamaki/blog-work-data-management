@@ -150,7 +150,11 @@ The third and final task enters the data into the ERP system and sends out the v
 
 The first and the second task can be run in a Control Room container. The advantage of that is you do not need to host the run environments yourself. It just works! Let your IT department take the afternoon off and enjoy some carbonara instead.
 
+![](control-room-step-1-cloud-container.png)
+
 The third task requires interacting with a Windows-based desktop application. It can be run in a Windows environment using Robocorp Workforce Agent. Robocorp also supports macOS and Linux!
+
+![](control-room-step-3-windows-desktop.png)
 
 ## Enabling high performance and error handling with work items and parallel execution
 

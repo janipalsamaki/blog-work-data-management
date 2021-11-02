@@ -144,6 +144,8 @@ The second task collects all the required data for each ticker.
 
 The third and final task enters the data into the ERP system and sends out the verification emails.
 
+![](process.png)
+
 ## Multiple execution environments
 
 The first and the second task can be run in a Control Room container. The advantage of that is you do not need to host the run environments yourself. It just works! Let your IT department take the afternoon off and enjoy some carbonara instead.

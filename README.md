@@ -164,7 +164,11 @@ To speed up the task execution, we can configure Control Room to use **parallel 
 
 To enable parallel processing, we should split our work into small chunks, **work items**, so that each of those items can be processed separately. In this case, one ticker becomes one work item.
 
+![](ticker-work-item.png)
+
 We can tell our robot to process multiple work items at the same time using the parallel execution support in Control Room. This results in faster process execution. Neat!
+
+![](company-data-work-item.png)
 
 In addition to enabling parallel processing, work items have other advantages, too.
 

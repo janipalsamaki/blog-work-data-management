@@ -120,7 +120,7 @@ For each ticker, get a screenshot of the market data from Yahoo Finance's websit
 
 For each ticker, download the company info PDF document from https://www.annualreports.com/. (This can be done using browser automation.)
 
-For each company, find the relevant data from the market data screenshots. (This can be done programmatically using OCR (optical character recognition).)
+For each company, find the relevant data from the market data screenshots. (This can be done programmatically using OCR (optical character recognition). For OCR, one can leverage intelligent automation and machine learning by integrating with cloud service providers, use de facto open-source OCR solutions such as Tesseract, or implement a custom solution to target the exact needs of any use case.)
 
 For each company, find the relevant page and data from the PDF documents. (This can be done by writing some PDF data extraction code in Python.)
 
